@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<launch>
+
+    <arg name="points_in" default="/hesai/pandar"/>
+
+    <arg name="imu_in" default="/orientation" />
+    <arg name="points_out" default="/lidar/points_undistorted" />
+    <arg name="points_out2" default="/lidar/points_distorted" />
+   
+    <arg name="timing_correction" default="true" />
+    <arg name="spin_rate" default="1000" />
+    <arg name="sr_radius" default="0.15" />
+
+    <node pkg="sr_lidar_distortion_correction" name="sr_lidar_distortion_correction_left" type="sr_lidar_distortion_correction" output="screen">
+      <remap from="points_in" to="$(arg points_in_l)"/>
+      <remap from="imu_in" to="$(arg imu_in)" />
+      <remap from="points_out" to="$(arg points_out)" />
+      <remap from="points_out2" to="$(arg points_out2)" /> 
+
+      <param name="timing_correction" type="bool" value="$(arg timing_correction)"/>
+      <param name="spin_rate" type="int" value="$(arg spin_rate)"/>
+      <param name="sr_radius" type="double" value="$(arg sr_radius)"/>
+    </node>
+
+</launch>
