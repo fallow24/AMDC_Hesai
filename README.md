@@ -9,6 +9,12 @@ The difference is only how each manufacturer assigns the timestamps for each poi
 Lidar distortion is caused by the movement of a Lidar sensor during the scanning process.
 Single measurement points have different reference locations in space resulting in inconsistent data.
 Measured points appear at wrong distance (straight line movement) and wrong direction (vehicle is turning), resulting in Lidar distortion.
+This repository focuses on systems that experience a lot of rotational motion, but neglects translation.
+
+Example using the Hesai Pandar-XT32:
+![Hesai distortion](img/amdc.png)
+
+Example using a Livox Mid-100 LiDAR:
 
 Distorted           |  Corrected
 :-------------------------:|:-------------------------:
