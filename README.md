@@ -1,4 +1,4 @@
-# AMDC LiDAR motion Distortion
+# AMDC LiDAR Self Motion Distortion Correction
 This repository implements angular motion distortion correction for Hesai LiDAR devices. 
 We have tested it specifically with the Hesai PandarXT-32 laser scanner, yet other LiDARs should be supported as well. 
 An implementation for Livox devices is available in [a different repository](https://github.com/deepcodin/AMDC).
