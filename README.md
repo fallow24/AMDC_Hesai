@@ -35,12 +35,23 @@ This increases performance and accuracy of applications relying on the point clo
 
 This motion distortion correction is concerned with the motion distortion correction of a 3D Livox lidar (MID100) mounted on a spehrical robot. This results in predominantly angular motion distortion. It can however, be used for any type of LiDAR sensor.
 
-Further information can be found in [this paper](https://tobepublished.org) [1]
-More information about distortions due to predominantly linear velocity, can be found in [this paper](https://ieeexplore.ieee.org/document/9128372) [2].
+## Publication 
 
+If you find yourself using our ROS node or adapting its code for academic work, please consider to cite [our paper](https://robotik.informatik.uni-wuerzburg.de/telematics/download/iSpaRo2024.pdf). [1]
 [1] Heinisch, P., Arzberger, F., Nüchter, A., "Inertial LiDAR Motion Distortion Correction on Spherical Mobile Mapping Systems for Planetary Exploration", 2024
 
-[2] Renzler, T., Stolz, M., Schratter, M., and Watzenig, D. "Increased accuracy for fast moving LiDARS: Correction of distorted point clouds." 2020 IEEE International Instrumentation and Measurement Technology Conference (I2MTC). IEEE, 2020.
+Bibtex:
+```bash
+@inproceedings{AMDCISPARO2024,
+  address = {Luxembourg},
+  author = {Heinisch, P. and Arzberger, F. and N{\"u}chter, A.},
+  booktitle = {Proceedings of the International Conference on Space Robotics (iSpaRo '24)},
+  month = may,
+  title = {Inertial LiDAR Motion Distortion Correction on Spherical Mobile Mapping Systems for Planetary Exploration},
+  url = {https://robotik.informatik.uni-wuerzburg.de/telematics/download/iSpaRo2024.pdf},
+  year = 2024
+}
+```
 
 ## ROS Node
 
