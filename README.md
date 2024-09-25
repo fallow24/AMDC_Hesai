@@ -1,4 +1,8 @@
 # AMDC LiDAR motion Distortion
+This repository implements angular motion distortion correction for Hesai LiDAR devices. 
+We have tested it specifically with the Hesai PandarXT-32 laser scanner, yet other LiDARs should be supported as well. 
+An implementation for Livox devices is available in [a different repository](https://github.com/deepcodin/AMDC).
+The difference is only how each manufacturer assigns the timestamps for each point. 
 
 ## General
 
@@ -8,8 +12,6 @@ Measured points appear at wrong distance (straight line movement) and wrong dire
 
 Distorted           |  Corrected
 :-------------------------:|:-------------------------:
-![Lidar distortion](img/top_distorted.png) | ![Lidar corrected](img/top_new.png)
-![Lidar distortion](img/side_distorted.png) | ![Lidar corrected](img/side_new.png)
 ![Lidar distortion](img/scan10_side_n2.png) | ![Lidar corrected](img/scan10_side2.png)
 
 The distortion error is increased with faster movement, meaning higher linear or angular velocity.
