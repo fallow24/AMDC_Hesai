@@ -4,6 +4,11 @@ We have tested it specifically with the Hesai PandarXT-32 laser scanner, yet oth
 An implementation for Livox devices is available in [a different repository](https://github.com/deepcodin/AMDC).
 The difference is only how each manufacturer assigns the timestamps for each point. 
 
+## Prerequisits
+
+You should provide inertial measurements (as [sensor_msgs::Imu](http://docs.ros.org/en/noetic/api/sensor_msgs/html/msg/Imu.html)).
+You must also provide a [static transform](http://wiki.ros.org/tf#static_transform_publisher) describing the relative transformation (rotation is sufficient, translation is ignored as we do not yet use accelerometers by design) between the LiDAR and IMU frame. 
+
 ## General
 
 Lidar distortion is caused by the movement of a Lidar sensor during the scanning process.
